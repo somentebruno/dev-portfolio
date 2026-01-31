@@ -9,7 +9,7 @@
     },
     "Hero": {
         "greeting": "Olá, eu sou",
-        "role": "Criando experiências digitais.",
+        "role": "Engenheiro de Software & Criativo.",
         "description": "Sou um Desenvolvedor Full Stack especializado em criar experiências digitais excepcionais. Atualmente, estou focado em construir produtos acessíveis e centrados no ser humano.",
         "viewProjects": "Ver Projetos",
         "contactMe": "Contate-me",
@@ -18,18 +18,28 @@
     "Experience": {
         "currently": "Atualmente",
         "present": "PRESENTE",
-        "seniorRole": "Engenheiro Frontend Sênior",
-        "seniorDesc": "Liderando a migração da arquitetura frontend para Next.js 14. Mentoria de desenvolvedores júnior e implementação de um novo design system focado em acessibilidade e performance.",
+        "seniorRole": "Estagiário de Pós-Graduação (Tecnologia & Inovação)",
+        "seniorDesc": "Atuando na interface entre tecnologia e comunicação para o programa de Saúde Digital do estado. Responsável por traduzir conceitos técnicos complexos para formatos acessíveis ao público final e apoiar a estratégia de difusão das ferramentas digitais do programa.",
+        "tag1": "Saúde Digital",
+        "tag2": "Estratégia",
+        "tag3": "Comunicação Técnica",
         "previousRoles": "Cargos anteriores",
-        "role1": "Desenvolvedor de Software",
-        "desc1": "Desenvolvimento de plataformas de e-commerce usando React e Node.js.",
-        "role2": "Dev Web Júnior",
-        "desc2": "Colaboração na implementação de UI e correção de bugs."
+        "role1": "Programador de Sistemas de Informação",
+        "desc1": "Atuação na sustentação e manutenção de sistemas legados da empresa. Responsável pela análise técnica de incidentes, diagnóstico de erros (troubleshooting) e validação de correções junto à equipe de desenvolvimento. Garantia da estabilidade das aplicações e suporte nível 2 para usuários críticos.",
+        "tagRole1_1": "Sustentação de Sistemas",
+        "tagRole1_2": "Troubleshooting",
+        "tagRole1_3": "Suporte Técnico",
+        "role2": "Analista de Informação e Processos",
+        "desc2": "Atuação focada na análise de requisitos e viabilidade técnica para projetos de grande escala (Orçamentos de milhões de reais). Responsável pela validação de regras de negócio complexas (Compliance), gestão de dados críticos e otimização de fluxos de trabalho entre stakeholders governamentais e equipes de execução.",
+        "tagRole2_1": "Análise de Requisitos",
+        "tagRole2_2": "Gestão de Projetos",
+        "tagRole2_3": "Lógica de Negócio",
+        "tagRole2_4": "Compliance"
     },
     "Projects": {
         "recentProjects": "Projetos Recentes",
         "filterPlaceholder": "Filtrar projetos...",
-        "project1Desc": "Uma plataforma de visualização de dados em tempo real para métricas SaaS, com gráficos personalizados e modo escuro.",
+        "project1Desc": "Gerenciador de tarefas focado em performance. Implementa CRUD completo, persistência local (LocalStorage) e gestão de estado otimizada para uma experiência instantânea.",
         "project2Desc": "Loja Shopify Headless construída para performance e otimização de conversão.",
         "project3Desc": "Aplicativo de produtividade para times remotos com sincronização em tempo real e suporte offline."
     },
@@ -39,6 +49,6 @@
     "Footer": {
         "connect": "Vamos conectar",
         "lastPlayed": "Última Reprodução",
-        "designedBy": "© 2024 Alex Chen. Desenvolvido com Tailwind CSS."
+        "designedBy": "© 2024 Bruno Lucas. Desenvolvido com Tailwind CSS."
     }
 }

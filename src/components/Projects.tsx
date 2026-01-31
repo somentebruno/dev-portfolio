@@ -12,25 +12,10 @@ export function Projects() {
 
     const projects = [
         {
-            title: "Analytics Dashboard",
+            title: "TaskFlow Manager",
             description: t("project1Desc"),
-            tags: ["React", "D3.js", "2024"],
-            image:
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuCUevxcHULzpw1WAdMML5eB_2Wmy8e4N6xCyMxmyzoTdhMSnN5Vm_KauZwFZp9hhcHmrKyE-ZU__-J2UyEnVOOwF4O4Ll1E1z4_iQOCW7G1774-R6Ciyu0kTaNYutnRoMrhrWe6tXgI78x7OTNwwuRYmrDeC4vMGhHO9qHh1I39XCqpM5VAnNzyM4Hi_g2hNVj_iH4e-M8_uqtVE4yo_mSHb0S9OyEaqlvUA5406qtd_kKTl9hKwyeOnRJipQZd5OoFcdAL1EeoReE",
-        },
-        {
-            title: "Nebula Commerce",
-            description: t("project2Desc"),
-            tags: ["Next.js", "Shopify", "2023"],
-            image:
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuCBmNY0T0nYwT94G6zlkFDivnKWPrC1LBtA_zaqRT-RTq-33yCrkb53ho9xMzMg6XQPGw8voMDA4JswwPu0JoeB0iExhi9ndAUagHYec6WW2TgOA0YDiMglV_g00H0Gh3uKIQE0D8pBlUp-SNdKPMDPOCswaRV-Yhv27FU-FGuBj6dSerbxjrYcSn2pVTyrRgMXby873zQ-ORA1I7G4TmMjCWPIGv-5mU3VJdczPfIV0lSKxnmEjKSWBE1NcFjKSw0e4tKplC-twk4",
-        },
-        {
-            title: "TaskFlow App",
-            description: t("project3Desc"),
-            tags: ["Vue", "Firebase", "2023"],
-            image:
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuDnn11jmS5p0ydRFrlSqTCHuKFqy3TluEvO0Gv65-T5firZokK-w9g63dd3RAAUuejFfrxUgs97-ZpEw9pxVa5QoXWjB0KY1SRyFw8v50spXow4OD9nzo-nJ83ugShJ4qO8HVCdq2S7MAFk_L5_x9JbTv4HjKvinbBv7X50I_UJDKMElr0JF4asv05YScQ69Cqyam4iRPhuHCSlbomYVB9Uf6f5Zi7s7rh6JxXJv58N_mexlrJf9Sz_Y4LdwCbtFEwfCm-CEDg9p4E",
+            tags: ["React", "TypeScript", "Tailwind CSS", "State Management"],
+            image: "/taskflow.png",
         },
     ];
 
@@ -79,7 +64,7 @@ export function Projects() {
                             <h4 className="text-lg font-bold text-text-main-light dark:text-text-main-dark mb-2 group-hover:text-primary transition-colors">
                                 {project.title}
                             </h4>
-                            <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 flex-grow">
+                            <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 flex-grow text-justify">
                                 {project.description}
                             </p>
                             <div className="flex flex-wrap gap-2 mt-auto">

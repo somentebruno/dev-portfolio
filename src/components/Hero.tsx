@@ -16,13 +16,13 @@ export function Hero() {
                 <div className="space-y-2">
                     <p className="font-mono text-primary text-sm">{t("greeting")}</p>
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main-light dark:text-text-main-dark">
-                        Alex Chen
+                        Bruno Lucas
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-medium text-text-muted-light dark:text-text-muted-dark">
                         {t("role")}
                     </h2>
                 </div>
-                <p className="text-text-muted-light dark:text-text-muted-dark text-lg max-w-lg leading-relaxed">
+                <p className="text-text-muted-light dark:text-text-muted-dark text-lg max-w-lg leading-relaxed text-justify">
                     {t("description")}
                 </p>
                 <div className="flex gap-4 pt-4">

@@ -23,51 +23,30 @@ export function Experience() {
                                 {t("seniorRole")}
                             </h3>
                             <p className="text-sm font-mono text-text-muted-light dark:text-text-muted-dark mt-1">
-                                2023 — {t("present")}
+                                NOV/2025 — {t("present")}
                             </p>
                         </div>
                         <div className="flex items-center gap-2">
                             <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary">
-                                TechFlow Inc.
+                                Saúde Digital MT | SES-MT
                             </span>
                             <span className="text-xs text-text-muted-light dark:text-text-muted-dark">
-                                Remote
+                                Cuiabá, MT
                             </span>
                         </div>
                     </div>
-                    <p className="text-text-muted-light dark:text-text-muted-dark mb-6 max-w-2xl">
+                    <p className="text-text-muted-light dark:text-text-muted-dark mb-6 max-w-2xl text-justify">
                         {t("seniorDesc")}
                     </p>
                     <div className="flex flex-wrap gap-3">
                         <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-xs font-medium text-text-main-light dark:text-text-main-dark">
-                            <Image
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs4hYAGFo2LDMDG75h7qJz7oi6xpzfP_zW_DBV8BxyVgKxBNSs5WjKb6ds4RDyNqRfsenjSgbgVWoGPIl1Mh96lxIoeGuGkWD-qhKUAjrJP5FuT34ttBJqVq8-4ehyP5F9Ksujj8rthmYeCuezofKM3gdX-V8_z2Jz1y_3kkRhr0nxU42DNAUSThjYzzh1bH_Bn9-LZT-K1i-k1eAf99dBN0lxJFMkRvQfq6PTen_q1wUKY9cFWJtF7iP98HuMb8cluA4FHsoaYlI"
-                                alt="NextJS"
-                                width={16}
-                                height={16}
-                                className="w-4 h-4 dark:invert"
-                            />
-                            Next.js
+                            {t("tag1")}
                         </span>
                         <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-xs font-medium text-text-main-light dark:text-text-main-dark">
-                            <Image
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAynr6isTlt5u7bHprPYfS1D981Atl9YxEDCP46nQcIbN1gayB8fEe4LPEahtQGXM7BvKP7vArsSo_i-dzgQreWpuh1PrucPodRst2lXQubmdmLZpuNhyofxmVJkWgI1YUu3ZHv65JiF3d-aWVbQ87kWYQ71stJ9Y1wobUMgcqoRt0m7uOiRJHR0pFHIVLt2wzpfnRB3N9n25kT15Py2R49c5CM_AjPLjo5FYzNEr_lBLxVTGS9B5fFNWrcEZxeoDOnrXsgQBknjzw"
-                                alt="TypeScript"
-                                width={16}
-                                height={16}
-                                className="w-4 h-4"
-                            />
-                            TypeScript
+                            {t("tag2")}
                         </span>
                         <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-xs font-medium text-text-main-light dark:text-text-main-dark">
-                            <Image
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZd89vcbirutr6Zo8FKPZCuS-L20rOCWjmVr06EhHSv9iolJIpZbC4tDkV3_WYxgHg73iLgGL3IczTlbfsi3NqbhJUPAUl6zioQLAjfv-p0Nrc2VM4LK24YflviCWR4v-q9254zhrdY-uYhoBFEcJ9yp9fVM5l0JYVKv3Jq2FnHi-o6JclccmPCS-4ANitFlIGPAd82H_9HfUTG_MjKCaEdQwsuEnUyOCjL8UWt-bznoMsSjVfuQQV-CHwRJ8brtvWHUkZj43lax8"
-                                alt="Tailwind"
-                                width={16}
-                                height={16}
-                                className="w-4 h-4"
-                            />
-                            Tailwind
+                            {t("tag3")}
                         </span>
                     </div>
                 </div>
@@ -84,11 +63,22 @@ export function Experience() {
                             {t("role1")}
                         </h4>
                         <p className="text-xs text-text-muted-light dark:text-text-muted-dark mb-1">
-                            Innovate Solutions • 2021 — 2023
+                            Conselho da Comunidade de Execução Penal de Cuiabá • JAN/2025 — JUL/2025
                         </p>
-                        <p className="text-sm text-text-muted-light dark:text-text-muted-dark">
+                        <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 text-justify">
                             {t("desc1")}
                         </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole1_1")}
+                            </span>
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole1_2")}
+                            </span>
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole1_3")}
+                            </span>
+                        </div>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-border-light dark:bg-border-dark"></div>
@@ -96,11 +86,25 @@ export function Experience() {
                             {t("role2")}
                         </h4>
                         <p className="text-xs text-text-muted-light dark:text-text-muted-dark mb-1">
-                            StartUp Hub • 2020 — 2021
+                            Conselho da Comunidade • JAN/2022 — DEZ/2024
                         </p>
-                        <p className="text-sm text-text-muted-light dark:text-text-muted-dark">
+                        <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 text-justify">
                             {t("desc2")}
                         </p>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole2_1")}
+                            </span>
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole2_2")}
+                            </span>
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole2_3")}
+                            </span>
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole2_4")}
+                            </span>
+                        </div>
                     </div>
                 </div>
             </details>

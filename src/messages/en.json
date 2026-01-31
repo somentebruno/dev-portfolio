@@ -9,7 +9,7 @@
     },
     "Hero": {
         "greeting": "Hello, I am",
-        "role": "Building digital experiences.",
+        "role": "Software Engineer & Creative.",
         "description": "I'm a Full Stack Developer specialized in crafting exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.",
         "viewProjects": "View Projects",
         "contactMe": "Contact Me",
@@ -18,18 +18,28 @@
     "Experience": {
         "currently": "Currently",
         "present": "PRESENT",
-        "seniorRole": "Senior Frontend Engineer",
-        "seniorDesc": "Leading the frontend architecture migration to Next.js 14. Mentoring junior developers and implementing a new design system focused on accessibility and performance.",
+        "seniorRole": "Postgraduate Intern (Technology & Innovation)",
+        "seniorDesc": "Working at the intersection of technology and communication for the state Digital Health program. Responsible for translating complex technical concepts into accessible formats for the general public and supporting the diffusion strategy of the program's digital tools.",
+        "tag1": "Digital Health",
+        "tag2": "Strategy",
+        "tag3": "Technical Communication",
         "previousRoles": "Previous roles",
-        "role1": "Software Developer",
-        "desc1": "Developed e-commerce platforms using React and Node.js.",
-        "role2": "Junior Web Dev",
-        "desc2": "Collaborated on UI implementation and bug fixing."
+        "role1": "Information Systems Programmer",
+        "desc1": "Acting in the support and maintenance of legacy systems. Responsible for technical incident analysis, troubleshooting, and validation of fixes with the development team. Ensuring application stability and level 2 support for critical users.",
+        "tagRole1_1": "System Maintenance",
+        "tagRole1_2": "Troubleshooting",
+        "tagRole1_3": "Technical Support",
+        "role2": "Information and Process Analyst",
+        "desc2": "Focused on requirements analysis and technical feasibility for large-scale projects (Multi-million budget). Responsible for validating complex business rules (Compliance), managing critical data, and optimizing workflows between government stakeholders and execution teams.",
+        "tagRole2_1": "Requirements Analysis",
+        "tagRole2_2": "Project Management",
+        "tagRole2_3": "Business Logic",
+        "tagRole2_4": "Compliance"
     },
     "Projects": {
         "recentProjects": "Recent Projects",
         "filterPlaceholder": "Filter projects...",
-        "project1Desc": "A real-time data visualization platform for SaaS metrics, featuring custom charts and dark mode.",
+        "project1Desc": "Performance-focused task manager. Implements full CRUD, local persistence (LocalStorage), and optimized state management for an instant experience.",
         "project2Desc": "Headless Shopify storefront built for performance and conversion optimization.",
         "project3Desc": "Productivity application for remote teams with real-time syncing and offline support."
     },
@@ -39,6 +49,6 @@
     "Footer": {
         "connect": "Let's connect",
         "lastPlayed": "Last Played",
-        "designedBy": "© 2024 Alex Chen. Designed with Tailwind CSS."
+        "designedBy": "© 2024 Bruno Lucas. Designed with Tailwind CSS."
     }
 }

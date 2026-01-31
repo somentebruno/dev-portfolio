@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image"; // Added for Album Cover
-import { Github, Linkedin, Twitter, Mail, RefreshCw, Disc } from "lucide-react"; // Using Lucide icons to replace Material Icons
+import { Github, Linkedin, Mail, RefreshCw, Disc } from "lucide-react"; // Using Lucide icons to replace Material Icons
 
 import { useTranslations } from "next-intl";
 
@@ -16,28 +16,14 @@ export function Footer() {
                     </h3>
                     <div className="flex gap-4">
                         <Link
-                            href="#"
+                            href="https://github.com/somentebruno"
                             className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
                         >
                             <Github className="w-5 h-5" />
                             <span className="sr-only">GitHub</span>
                         </Link>
                         <Link
-                            href="#"
-                            className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
-                        >
-                            <Linkedin className="w-5 h-5" />
-                            <span className="sr-only">LinkedIn</span>
-                        </Link>
-                        <Link
-                            href="#"
-                            className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
-                        >
-                            <Twitter className="w-5 h-5" />
-                            <span className="sr-only">Twitter</span>
-                        </Link>
-                        <Link
-                            href="mailto:hello@example.com"
+                            href="mailto:brunolucasdev@gmail.com"
                             className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
                         >
                             <Mail className="w-5 h-5" />
