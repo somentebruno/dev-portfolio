@@ -4,6 +4,7 @@ import "./../globals.css"; // Adjusted path
 import { ThemeProvider } from "next-themes"; // Import ThemeProvider
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import "devicon/devicon.min.css";
 
 const inter = Inter({
   subsets: ["latin"],
