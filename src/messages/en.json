@@ -29,7 +29,7 @@
         "tagRole1_1": "System Maintenance",
         "tagRole1_2": "Troubleshooting",
         "tagRole1_3": "Technical Support",
-        "role2": "Information and Process Analyst",
+        "role2": "Information Analyst",
         "desc2": "Focused on requirements analysis and technical feasibility for large-scale projects (Multi-million budget). Responsible for validating complex business rules (Compliance), managing critical data, and optimizing workflows between government stakeholders and execution teams.",
         "tagRole2_1": "Requirements Analysis",
         "tagRole2_2": "Project Management",
@@ -49,6 +49,6 @@
     "Footer": {
         "connect": "Let's connect",
         "lastPlayed": "Last Played",
-        "designedBy": "© 2024 Bruno Lucas. Designed with Tailwind CSS."
+        "designedBy": "© 2026 Bruno Lucas. Designed with Tailwind CSS."
     }
 }

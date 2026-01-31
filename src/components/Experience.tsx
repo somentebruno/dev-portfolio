@@ -86,7 +86,7 @@ export function Experience() {
                             {t("role2")}
                         </h4>
                         <p className="text-xs text-text-muted-light dark:text-text-muted-dark mb-1">
-                            Conselho da Comunidade • JAN/2022 — DEZ/2024
+                            Conselho da Comunidade de Execução Penal de Cuiabá • JAN/2022 — DEZ/2024
                         </p>
                         <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 text-justify">
                             {t("desc2")}

@@ -61,7 +61,7 @@ export function Footer() {
                 </div>
             </div>
             <div className="text-center pb-8 text-xs text-text-muted-light dark:text-text-muted-dark font-mono">
-                <p>© 2024 Alex Chen. Designed with Tailwind CSS.</p>
+                <p>{t("designedBy")}</p>
             </div>
         </footer>
     );

@@ -3,23 +3,23 @@ import { useTranslations } from "next-intl";
 const technologies = [
     {
         name: "TypeScript",
-        iconClass: "devicon-typescript-plain colored",
+        iconClass: "devicon-typescript-plain",
     },
     {
         name: "Next.js",
-        iconClass: "devicon-nextjs-plain text-black dark:text-white",
+        iconClass: "devicon-nextjs-plain",
     },
     {
         name: "Tailwind CSS",
-        iconClass: "devicon-tailwindcss-original",
+        iconClass: "devicon-tailwindcss-plain",
     },
     {
         name: "Node.js",
-        iconClass: "devicon-nodejs-plain-wordmark colored",
+        iconClass: "devicon-nodejs-plain",
     },
     {
         name: "Git / GitHub",
-        iconClass: "devicon-github-original text-black dark:text-white",
+        iconClass: "devicon-github-original",
     },
 ];
 
@@ -37,7 +37,7 @@ export function Technologies() {
                         key={tech.name}
                         className="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary/50 transition-colors group h-24"
                     >
-                        <i className={`${tech.iconClass} text-4xl mb-2 group-hover:scale-110 transition-transform`}></i>
+                        <i className={`${tech.iconClass} text-4xl mb-2 text-gray-600 dark:text-gray-400 group-hover:text-primary transition-colors duration-300 group-hover:scale-110 transition-transform`}></i>
                         <span className="text-xs font-medium text-text-muted-light dark:text-text-muted-dark group-hover:text-primary mt-2">
                             {tech.name}
                         </span>

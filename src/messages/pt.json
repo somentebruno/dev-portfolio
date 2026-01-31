@@ -29,7 +29,7 @@
         "tagRole1_1": "Sustentação de Sistemas",
         "tagRole1_2": "Troubleshooting",
         "tagRole1_3": "Suporte Técnico",
-        "role2": "Analista de Informação e Processos",
+        "role2": "Analista de Informação",
         "desc2": "Atuação focada na análise de requisitos e viabilidade técnica para projetos de grande escala (Orçamentos de milhões de reais). Responsável pela validação de regras de negócio complexas (Compliance), gestão de dados críticos e otimização de fluxos de trabalho entre stakeholders governamentais e equipes de execução.",
         "tagRole2_1": "Análise de Requisitos",
         "tagRole2_2": "Gestão de Projetos",
@@ -49,6 +49,6 @@
     "Footer": {
         "connect": "Vamos conectar",
         "lastPlayed": "Última Reprodução",
-        "designedBy": "© 2024 Bruno Lucas. Desenvolvido com Tailwind CSS."
+        "designedBy": "© 2026 Bruno Lucas. Desenvolvido com Tailwind CSS."
     }
 }
