@@ -45,10 +45,11 @@ export function Hero() {
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl transform translate-x-10 translate-y-10 -z-10"></div>
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 hover:shadow-[0_0_10px_rgba(14,165,233,0.4)]">
                     <Image
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeJF48g9jtIXvVy9JGKiUo6esZVRLSNajKxy8HyFQO_tTQKrLbe8lQdfFGh52N5SkpnJE1yt42Kd48aehgR10RxfLgraCzqIIwtRMrEQSX85Gk_YIV7aPBP7Wg4FGC0vpt5GA-Y7w7GWTJAeKUyXBSKB4iXzqRoX03lw7RYob4UrorPGbh_CcwvUJxbEd_PrIYsMsNLWx3fCylBMIUjvD_i8e6S0ZVoVpHo5UJ3geCEC3o7-KQp2DH-PeKiYm885DyWBubqxU_QG0"
-                        alt="Portrait of Alex Chen"
+                        src="/profile-smile.png"
+                        alt="Bruno Lucas"
                         width={320}
                         height={320}
+                        priority
                         className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
                     />
                 </div>
