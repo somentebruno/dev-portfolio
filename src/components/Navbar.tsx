@@ -4,8 +4,12 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
+    const t = useTranslations("Navbar");
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
@@ -27,25 +31,25 @@ export function Navbar() {
                             href="#about"
                             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
                         >
-                            About
+                            {t("about")}
                         </Link>
                         <Link
                             href="#experience"
                             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
                         >
-                            Experience
+                            {t("experience")}
                         </Link>
                         <Link
                             href="#projects"
                             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
                         >
-                            Projects
+                            {t("projects")}
                         </Link>
                         <Link
                             href="#contact"
                             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
                         >
-                            Contact
+                            {t("contact")}
                         </Link>
                     </div>
                     <div className="flex items-center gap-4">
@@ -60,6 +64,7 @@ export function Navbar() {
                                 <Moon className="w-5 h-5" />
                             )}
                         </button>
+                        <LanguageSwitcher />
                         <Link
                             href="#"
                             className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-sky-600 transition-colors shadow-lg shadow-sky-500/20"

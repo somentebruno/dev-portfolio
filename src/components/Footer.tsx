@@ -2,13 +2,17 @@ import Link from "next/link";
 import Image from "next/image"; // Added for Album Cover
 import { Github, Linkedin, Twitter, Mail, RefreshCw, Disc } from "lucide-react"; // Using Lucide icons to replace Material Icons
 
+import { useTranslations } from "next-intl";
+
 export function Footer() {
+    const t = useTranslations("Footer");
+
     return (
         <footer id="contact" className="pt-12 border-t border-border-light dark:border-border-dark">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 pb-12">
                 <div className="space-y-4">
                     <h3 className="text-xl font-bold text-text-main-light dark:text-text-main-dark">
-                        Let's connect
+                        {t("connect")}
                     </h3>
                     <div className="flex gap-4">
                         <Link

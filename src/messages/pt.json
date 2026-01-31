@@ -1,0 +1,44 @@
+{
+    "Navbar": {
+        "about": "Sobre",
+        "experience": "Experiência",
+        "projects": "Projetos",
+        "contact": "Contato",
+        "resume": "Currículo",
+        "toggleTheme": "Alternar tema"
+    },
+    "Hero": {
+        "greeting": "Olá, eu sou",
+        "role": "Criando experiências digitais.",
+        "description": "Sou um Desenvolvedor Full Stack especializado em criar experiências digitais excepcionais. Atualmente, estou focado em construir produtos acessíveis e centrados no ser humano.",
+        "viewProjects": "Ver Projetos",
+        "contactMe": "Contate-me",
+        "openToWork": "Disponível para trabalho"
+    },
+    "Experience": {
+        "currently": "Atualmente",
+        "present": "PRESENTE",
+        "seniorRole": "Engenheiro Frontend Sênior",
+        "seniorDesc": "Liderando a migração da arquitetura frontend para Next.js 14. Mentoria de desenvolvedores júnior e implementação de um novo design system focado em acessibilidade e performance.",
+        "previousRoles": "Cargos anteriores",
+        "role1": "Desenvolvedor de Software",
+        "desc1": "Desenvolvimento de plataformas de e-commerce usando React e Node.js.",
+        "role2": "Dev Web Júnior",
+        "desc2": "Colaboração na implementação de UI e correção de bugs."
+    },
+    "Projects": {
+        "recentProjects": "Projetos Recentes",
+        "filterPlaceholder": "Filtrar projetos...",
+        "project1Desc": "Uma plataforma de visualização de dados em tempo real para métricas SaaS, com gráficos personalizados e modo escuro.",
+        "project2Desc": "Loja Shopify Headless construída para performance e otimização de conversão.",
+        "project3Desc": "Aplicativo de produtividade para times remotos com sincronização em tempo real e suporte offline."
+    },
+    "Technologies": {
+        "title": "Tecnologias"
+    },
+    "Footer": {
+        "connect": "Vamos conectar",
+        "lastPlayed": "Última Reprodução",
+        "designedBy": "© 2024 Alex Chen. Desenvolvido com Tailwind CSS."
+    }
+}

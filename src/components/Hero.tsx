@@ -2,7 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Code } from "lucide-react";
 
+import { useTranslations } from "next-intl";
+
 export function Hero() {
+    const t = useTranslations("Hero");
+
     return (
         <section
             id="about"
@@ -10,18 +14,16 @@ export function Hero() {
         >
             <div className="w-full md:w-1/2 space-y-6 order-2 md:order-1">
                 <div className="space-y-2">
-                    <p className="font-mono text-primary text-sm">Hello, I am</p>
+                    <p className="font-mono text-primary text-sm">{t("greeting")}</p>
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text-main-light dark:text-text-main-dark">
                         Alex Chen
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-medium text-text-muted-light dark:text-text-muted-dark">
-                        Building digital experiences.
+                        {t("role")}
                     </h2>
                 </div>
                 <p className="text-text-muted-light dark:text-text-muted-dark text-lg max-w-lg leading-relaxed">
-                    I'm a Full Stack Developer specialized in crafting exceptional digital
-                    experiences. Currently, I'm focused on building accessible,
-                    human-centered products.
+                    {t("description")}
                 </p>
                 <div className="flex gap-4 pt-4">
                     <Link
@@ -29,13 +31,13 @@ export function Hero() {
                         className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-primary text-primary hover:bg-primary/10 rounded-lg transition-all font-medium"
                     >
                         <Code className="text-lg" />
-                        View Projects
+                        {t("viewProjects")}
                     </Link>
                     <Link
                         href="#contact"
                         className="inline-flex items-center gap-2 px-6 py-3 text-text-muted-light dark:text-text-muted-dark hover:text-text-main-light dark:hover:text-text-main-dark transition-colors font-medium"
                     >
-                        Contact Me
+                        {t("contactMe")}
                     </Link>
                 </div>
             </div>
@@ -58,7 +60,7 @@ export function Hero() {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                     </span>
-                    <span className="text-sm font-mono font-medium">Open to work</span>
+                    <span className="text-sm font-mono font-medium">{t("openToWork")}</span>
                 </div>
             </div>
         </section>

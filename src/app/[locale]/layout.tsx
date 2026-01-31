@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google"; // Import fonts
-import "./globals.css";
+import "./../globals.css"; // Adjusted path
 import { ThemeProvider } from "next-themes"; // Import ThemeProvider
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,19 +22,25 @@ export const metadata: Metadata = {
   description: "Portfolio of a Full Stack Developer specializing in modern web technologies.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
+  const messages = await getMessages();
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${inter.variable} ${firaCode.variable} antialiased bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark transition-colors duration-300 min-h-screen`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-           {children}
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

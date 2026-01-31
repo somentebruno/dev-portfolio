@@ -1,0 +1,44 @@
+{
+    "Navbar": {
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact",
+        "resume": "Resume",
+        "toggleTheme": "Toggle theme"
+    },
+    "Hero": {
+        "greeting": "Hello, I am",
+        "role": "Building digital experiences.",
+        "description": "I'm a Full Stack Developer specialized in crafting exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.",
+        "viewProjects": "View Projects",
+        "contactMe": "Contact Me",
+        "openToWork": "Open to work"
+    },
+    "Experience": {
+        "currently": "Currently",
+        "present": "PRESENT",
+        "seniorRole": "Senior Frontend Engineer",
+        "seniorDesc": "Leading the frontend architecture migration to Next.js 14. Mentoring junior developers and implementing a new design system focused on accessibility and performance.",
+        "previousRoles": "Previous roles",
+        "role1": "Software Developer",
+        "desc1": "Developed e-commerce platforms using React and Node.js.",
+        "role2": "Junior Web Dev",
+        "desc2": "Collaborated on UI implementation and bug fixing."
+    },
+    "Projects": {
+        "recentProjects": "Recent Projects",
+        "filterPlaceholder": "Filter projects...",
+        "project1Desc": "A real-time data visualization platform for SaaS metrics, featuring custom charts and dark mode.",
+        "project2Desc": "Headless Shopify storefront built for performance and conversion optimization.",
+        "project3Desc": "Productivity application for remote teams with real-time syncing and offline support."
+    },
+    "Technologies": {
+        "title": "Technologies"
+    },
+    "Footer": {
+        "connect": "Let's connect",
+        "lastPlayed": "Last Played",
+        "designedBy": "© 2024 Alex Chen. Designed with Tailwind CSS."
+    }
+}

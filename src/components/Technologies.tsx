@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const technologies = [
     {
@@ -28,10 +29,12 @@ const technologies = [
 ];
 
 export function Technologies() {
+    const t = useTranslations("Technologies");
+
     return (
         <section className="space-y-6">
             <h3 className="text-xs font-bold tracking-widest text-text-muted-light dark:text-text-muted-dark uppercase">
-                Technologies
+                {t("title")}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {technologies.map((tech) => (

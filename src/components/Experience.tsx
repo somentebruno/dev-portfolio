@@ -1,12 +1,16 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
+import { useTranslations } from "next-intl";
+
 export function Experience() {
+    const t = useTranslations("Experience");
+
     return (
         <section id="experience" className="space-y-8">
             <div className="flex items-center gap-4 mb-8">
                 <h3 className="text-xs font-bold tracking-widest text-text-muted-light dark:text-text-muted-dark uppercase">
-                    Currently
+                    {t("currently")}
                 </h3>
                 <div className="h-[1px] bg-border-light dark:border-border-dark flex-grow"></div>
             </div>
@@ -16,10 +20,10 @@ export function Experience() {
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                         <div>
                             <h3 className="text-xl md:text-2xl font-bold text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">
-                                Senior Frontend Engineer
+                                {t("seniorRole")}
                             </h3>
                             <p className="text-sm font-mono text-text-muted-light dark:text-text-muted-dark mt-1">
-                                2023 — PRESENT
+                                2023 — {t("present")}
                             </p>
                         </div>
                         <div className="flex items-center gap-2">
@@ -32,9 +36,7 @@ export function Experience() {
                         </div>
                     </div>
                     <p className="text-text-muted-light dark:text-text-muted-dark mb-6 max-w-2xl">
-                        Leading the frontend architecture migration to Next.js 14. Mentoring
-                        junior developers and implementing a new design system focused on
-                        accessibility and performance.
+                        {t("seniorDesc")}
                     </p>
                     <div className="flex flex-wrap gap-3">
                         <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-xs font-medium text-text-main-light dark:text-text-main-dark">
@@ -73,31 +75,31 @@ export function Experience() {
             <details className="group">
                 <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-text-main-light dark:hover:text-text-main-dark transition-colors list-none select-none">
                     <ChevronRight className="transition-transform group-open:rotate-90 text-lg" />
-                    Previous roles
+                    {t("previousRoles")}
                 </summary>
                 <div className="pl-7 mt-4 space-y-6 border-l border-border-light dark:border-border-dark ml-2">
                     <div className="pl-6 relative">
                         <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-border-light dark:bg-border-dark"></div>
                         <h4 className="text-base font-semibold text-text-main-light dark:text-text-main-dark">
-                            Software Developer
+                            {t("role1")}
                         </h4>
                         <p className="text-xs text-text-muted-light dark:text-text-muted-dark mb-1">
                             Innovate Solutions • 2021 — 2023
                         </p>
                         <p className="text-sm text-text-muted-light dark:text-text-muted-dark">
-                            Developed e-commerce platforms using React and Node.js.
+                            {t("desc1")}
                         </p>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-border-light dark:bg-border-dark"></div>
                         <h4 className="text-base font-semibold text-text-main-light dark:text-text-main-dark">
-                            Junior Web Dev
+                            {t("role2")}
                         </h4>
                         <p className="text-xs text-text-muted-light dark:text-text-muted-dark mb-1">
                             StartUp Hub • 2020 — 2021
                         </p>
                         <p className="text-sm text-text-muted-light dark:text-text-muted-dark">
-                            Collaborated on UI implementation and bug fixing.
+                            {t("desc2")}
                         </p>
                     </div>
                 </div>
