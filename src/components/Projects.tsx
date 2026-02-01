@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight, Search } from "lucide-react";
+import Link from "next/link";
+import { Search, Globe, Code } from "lucide-react";
 import { useState } from "react";
 
 import { useTranslations } from "next-intl";
@@ -16,6 +17,8 @@ export function Projects() {
             description: t("project1Desc"),
             tags: ["React", "TypeScript", "Tailwind CSS", "State Management"],
             image: "/taskflow.png",
+            link: "https://todo.brunolucasdev.com",
+            repo: "https://github.com/somentebruno/to-do-list-app",
         },
     ];
 
@@ -48,16 +51,37 @@ export function Projects() {
                         key={project.title}
                         className="group bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col h-full"
                     >
-                        <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-800">
+                        <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-800 group">
                             <Image
                                 src={project.image}
                                 alt={`${project.title} Interface`}
                                 width={400}
                                 height={200}
-                                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                className="w-full h-full object-cover transform group-hover:scale-110 group-hover:blur-sm transition-all duration-500"
                             />
-                            <div className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm p-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                                <ArrowUpRight className="text-white w-4 h-4" />
+                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                                {project.link && (
+                                    <Link
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-5 py-2 rounded-full border border-primary text-white bg-transparent hover:bg-primary transition-colors font-bold text-xs tracking-wider"
+                                    >
+                                        <Globe className="w-4 h-4" />
+                                        DEMO
+                                    </Link>
+                                )}
+                                {project.repo && (
+                                    <Link
+                                        href={project.repo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-5 py-2 rounded-full border border-primary text-white bg-transparent hover:bg-primary transition-colors font-bold text-xs tracking-wider"
+                                    >
+                                        <Code className="w-4 h-4" />
+                                        CODE
+                                    </Link>
+                                )}
                             </div>
                         </div>
                         <div className="p-5 flex flex-col flex-grow">

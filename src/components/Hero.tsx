@@ -54,7 +54,7 @@ export function Hero() {
                     />
                 </div>
                 <div
-                    className="absolute -bottom-6 -left-6 bg-surface-light dark:bg-surface-dark p-4 rounded-lg shadow-xl border border-border-light dark:border-border-dark flex items-center gap-3 animate-bounce"
+                    className="absolute -bottom-16 left-0 md:-left-6 bg-surface-light dark:bg-surface-dark p-4 rounded-lg shadow-xl border border-border-light dark:border-border-dark flex items-center gap-3 animate-bounce whitespace-nowrap z-30"
                     style={{ animationDuration: "3s" }}
                 >
                     <span className="relative flex h-3 w-3">

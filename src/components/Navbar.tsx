@@ -67,7 +67,7 @@ export function Navbar() {
                         <LanguageSwitcher />
                         <Link
                             href="#"
-                            className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-sky-600 transition-colors shadow-lg shadow-sky-500/20"
+                            className="bg-sky-600 dark:bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-sky-700 dark:hover:bg-sky-600 transition-colors shadow-lg"
                         >
                             {t("resume")}
                         </Link>
