@@ -19,7 +19,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio",
+  title: "Bruno Lucas | Developer Portfolio",
   description: "Portfolio of a Full Stack Developer specializing in modern web technologies.",
 };
 
