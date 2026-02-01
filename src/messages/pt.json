@@ -40,7 +40,7 @@
         "recentProjects": "Projetos Recentes",
         "filterPlaceholder": "Filtrar projetos...",
         "project1Desc": "Gerenciador de tarefas focado em performance. Implementa CRUD completo, persistência local (LocalStorage) e gestão de estado otimizada para uma experiência instantânea.",
-        "project2Desc": "Loja Shopify Headless construída para performance e otimização de conversão.",
+        "project2Desc": "Agregador de links personalizado com interface responsiva e sistema de troca de temas (Light/Dark mode) em tempo real. Focado em semântica HTML, performance e experiência do usuário através de micro-interações.",
         "project3Desc": "Aplicativo de produtividade para times remotos com sincronização em tempo real e suporte offline."
     },
     "Technologies": {

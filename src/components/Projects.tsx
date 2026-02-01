@@ -20,6 +20,14 @@ export function Projects() {
             link: "https://todo.brunolucasdev.com",
             repo: "https://github.com/somentebruno/to-do-list-app",
         },
+        {
+            title: "DevLinks",
+            description: t("project2Desc"),
+            tags: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
+            image: "/devlinks-v3.png",
+            link: "https://somentebruno.github.io/projeto-dev-links/",
+            repo: "https://github.com/somentebruno/projeto-dev-links",
+        },
     ];
 
     const filteredProjects = projects.filter((project) =>
