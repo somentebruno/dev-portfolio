@@ -41,7 +41,7 @@
         "filterPlaceholder": "Filtrar projetos...",
         "project1Desc": "Gerenciador de tarefas focado em performance. Implementa CRUD completo, persistência local (LocalStorage) e gestão de estado otimizada para uma experiência instantânea.",
         "project2Desc": "Agregador de links personalizado com interface responsiva e sistema de troca de temas (Light/Dark mode) em tempo real. Focado em semântica HTML, performance e experiência do usuário através de micro-interações.",
-        "project3Desc": "Aplicativo de produtividade para times remotos com sincronização em tempo real e suporte offline."
+        "project3Desc": "Este projeto é uma landing page institucional para uma empresa de móveis sob medida, focada em uma experiência de usuário limpa e elegante. Foi desenvolvido durante minha trilha de aprendizado com a Rocketseat, aplicando conceitos fundamentais de estruturação web e fidelidade ao design original."
     },
     "Technologies": {
         "title": "Tecnologias"

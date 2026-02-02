@@ -28,6 +28,14 @@ export function Projects() {
             link: "https://somentebruno.github.io/projeto-dev-links/",
             repo: "https://github.com/somentebruno/projeto-dev-links",
         },
+        {
+            title: "Móveis Customizados",
+            description: t("project3Desc"),
+            tags: ["HTML5", "CSS3", "Figma", "Git"],
+            image: "/moveis-customizados-v2.png",
+            link: "https://somentebruno.github.io/projeto-moveis-customizados/",
+            repo: "https://github.com/somentebruno/projeto-moveis-customizados",
+        },
     ];
 
     const filteredProjects = projects.filter((project) =>

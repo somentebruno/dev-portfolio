@@ -41,7 +41,7 @@
         "filterPlaceholder": "Filter projects...",
         "project1Desc": "Performance-focused task manager. Implements full CRUD, local persistence (LocalStorage), and optimized state management for an instant experience.",
         "project2Desc": "Custom link aggregator with responsive interface and real-time theme switching system (Light/Dark mode). Focused on HTML semantics, performance, and user experience through micro-interactions.",
-        "project3Desc": "Productivity application for remote teams with real-time syncing and offline support."
+        "project3Desc": "This project is an institutional landing page for a custom furniture company, focused on a clean and elegant user experience. It was developed during my learning path with Rocketseat, applying fundamental concepts of web structuring and fidelity to original design."
     },
     "Technologies": {
         "title": "Technologies"
