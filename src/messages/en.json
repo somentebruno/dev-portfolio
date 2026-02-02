@@ -41,7 +41,8 @@
         "filterPlaceholder": "Filter projects...",
         "project1Desc": "Performance-focused task manager. Implements full CRUD, local persistence (LocalStorage), and optimized state management for an instant experience.",
         "project2Desc": "Custom link aggregator with responsive interface and real-time theme switching system (Light/Dark mode). Focused on HTML semantics, performance, and user experience through micro-interactions.",
-        "project3Desc": "This project is an institutional landing page for a custom furniture company, focused on a clean and elegant user experience. It was developed during my learning path with Rocketseat, applying fundamental concepts of web structuring and fidelity to original design."
+        "project3Desc": "This project is an institutional landing page for a custom furniture company, focused on a clean and elegant user experience. It was developed during my learning path with Rocketseat, applying fundamental concepts of web structuring and fidelity to original design.",
+        "project4Desc": "Treine Me is a modern landing page developed for a physical training program. The goal is to offer exclusive workouts to help users achieve better performance and quality of life. The project features a clean and attractive interface, highlighting the main value proposition and a call to action (CTA)."
     },
     "Technologies": {
         "title": "Technologies"
