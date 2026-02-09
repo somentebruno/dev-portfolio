@@ -44,6 +44,14 @@ export function Projects() {
             link: "https://somentebruno.github.io/projeto-treine-me/",
             repo: "https://github.com/somentebruno/projeto-treine-me",
         },
+        {
+            title: "Jogo da Adivinhação",
+            description: t("project5Desc"),
+            tags: ["HTML5", "CSS3", "JavaScript"],
+            image: "/jogo-advinhacao.png",
+            link: "https://somentebruno.github.io/jogo-advinhacao/",
+            repo: "https://github.com/somentebruno/jogo-advinhacao",
+        },
     ];
 
     const filteredProjects = projects.filter((project) =>

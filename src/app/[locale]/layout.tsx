@@ -3,7 +3,7 @@ import { Inter, Fira_Code } from "next/font/google"; // Import fonts
 import "./../globals.css"; // Adjusted path
 import { ThemeProvider } from "next-themes"; // Import ThemeProvider
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import "devicon/devicon.min.css";
 
 const inter = Inter({
@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   description: "Portfolio of a Full Stack Developer specializing in modern web technologies.",
 };
 
+export function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "pt" }];
+}
+
 export default async function RootLayout({
   children,
   params,
@@ -31,6 +35,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (

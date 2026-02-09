@@ -34,6 +34,12 @@ export function Navbar() {
                             {t("about")}
                         </Link>
                         <Link
+                            href="#education"
+                            className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
+                        >
+                            {t("education")}
+                        </Link>
+                        <Link
                             href="#experience"
                             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
                         >
