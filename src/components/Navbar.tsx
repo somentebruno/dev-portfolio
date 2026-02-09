@@ -22,9 +22,9 @@ export function Navbar() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0 flex items-center gap-2">
-                        <span className="font-mono text-primary font-bold text-lg">
-                            {"{ dev_portfolio }"}
-                        </span>
+                        <Link href="/" className="font-mono text-primary font-bold text-lg hover:opacity-80 transition-opacity">
+                            {"{ bruno_lucas }"}
+                        </Link>
                     </div>
                     <div className="hidden md:flex items-center space-x-8">
                         <Link
@@ -61,7 +61,7 @@ export function Navbar() {
                     <div className="flex items-center gap-4">
                         <button
                             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                            className="p-2 rounded-full hover:bg-surface-light dark:hover:bg-surface-dark transition-colors text-text-muted-light dark:text-text-muted-dark"
+                            className="p-2 rounded-full hover:bg-surface-light dark:hover:bg-surface-dark transition-colors text-text-muted-light dark:text-text-muted-dark cursor-pointer"
                             aria-label="Toggle theme"
                         >
                             {mounted && theme === "dark" ? (

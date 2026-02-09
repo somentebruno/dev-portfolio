@@ -59,7 +59,9 @@
         "project2Desc": "Agregador de links personalizado com interface responsiva e sistema de troca de temas (Light/Dark mode) em tempo real. Focado em semântica HTML, performance e experiência do usuário através de micro-interações.",
         "project3Desc": "Este projeto é uma landing page institucional para uma empresa de móveis sob medida, focada em uma experiência de usuário limpa e elegante. Foi desenvolvido durante minha trilha de aprendizado com a Rocketseat, aplicando conceitos fundamentais de estruturação web e fidelidade ao design original.",
         "project4Desc": "Treine Me é uma landing page moderna desenvolvida para um programa de treinamentos físicos. O objetivo é oferecer treinos exclusivos para ajudar os usuários a alcançarem melhor performance e qualidade de vida. O projeto apresenta uma interface limpa e atrativa, destacando a proposta de valor principal e uma chamada para ação (CTA).",
-        "project5Desc": "Um jogo de adivinhação minimalista e interativo, construído para demonstrar práticas modernas e limpas de desenvolvimento web."
+        "project5Desc": "Um jogo de adivinhação minimalista e interativo, construído para demonstrar práticas modernas e limpas de desenvolvimento web.",
+        "showMore": "Ver mais",
+        "showLess": "Ver menos"
     },
     "Technologies": {
         "title": "Tecnologias"

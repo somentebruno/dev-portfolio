@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Globe, Code } from "lucide-react";
+import { Search, Globe, Code, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
 import { useTranslations } from "next-intl";
@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 export function Projects() {
     const t = useTranslations("Projects");
     const [search, setSearch] = useState("");
+    const [showAll, setShowAll] = useState(false);
 
     const projects = [
         {
@@ -58,6 +59,8 @@ export function Projects() {
         project.title.toLowerCase().includes(search.toLowerCase())
     );
 
+    const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
+
     return (
         <section id="projects" className="space-y-8">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
@@ -78,7 +81,7 @@ export function Projects() {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredProjects.map((project) => (
+                {displayedProjects.map((project) => (
                     <div
                         key={project.title}
                         className="group bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col h-full"
@@ -137,6 +140,26 @@ export function Projects() {
                     </div>
                 ))}
             </div>
+            {filteredProjects.length > 3 && (
+                <div className="flex justify-center mt-8">
+                    <button
+                        onClick={() => setShowAll(!showAll)}
+                        className="flex items-center gap-2 group text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium cursor-pointer"
+                    >
+                        {showAll ? (
+                            <>
+                                {t("showLess")}
+                                <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+                            </>
+                        ) : (
+                            <>
+                                {t("showMore")}
+                                <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                            </>
+                        )}
+                    </button>
+                </div>
+            )}
         </section>
     );
 }

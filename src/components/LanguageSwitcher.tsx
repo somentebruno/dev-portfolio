@@ -23,7 +23,7 @@ export function LanguageSwitcher() {
         <button
             onClick={toggleLanguage}
             disabled={isPending}
-            className="px-3 py-1 rounded-md text-sm font-medium border border-border-light dark:border-border-dark hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+            className="px-3 py-1 rounded-md text-sm font-medium border border-border-light dark:border-border-dark hover:bg-surface-light dark:hover:bg-surface-dark transition-colors cursor-pointer"
             aria-label="Switch language"
         >
             {locale === "en" ? "PT" : "EN"}
