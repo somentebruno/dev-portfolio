@@ -9,24 +9,37 @@ export function LanguageSwitcher() {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
 
-    const toggleLanguage = () => {
-        const nextLocale = locale === "en" ? "pt" : "en";
+    const switchLanguage = (nextLocale: string) => {
+        if (locale === nextLocale) return;
         startTransition(() => {
-            // Typically you would use logic to preserve the path, 
-            // but simple replacement works for this straightforward stucture
-            // or using a library like `next-intl/navigation` Link/usePathname
             window.location.href = `/${nextLocale}`;
         });
     };
 
     return (
-        <button
-            onClick={toggleLanguage}
-            disabled={isPending}
-            className="px-3 py-1 rounded-md text-sm font-medium border border-border-light dark:border-border-dark hover:bg-surface-light dark:hover:bg-surface-dark transition-colors cursor-pointer"
-            aria-label="Switch language"
-        >
-            {locale === "en" ? "PT" : "EN"}
-        </button>
+        <div className="flex items-center gap-1 bg-surface-light dark:bg-surface-dark rounded-full border border-border-light dark:border-border-dark p-1">
+            <button
+                onClick={() => switchLanguage("pt")}
+                disabled={isPending}
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all duration-300 ${locale === "pt"
+                        ? "bg-sky-700 text-white dark:bg-sky-400 dark:text-slate-900 shadow-md transform scale-105"
+                        : "text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-400 cursor-pointer hover:bg-sky-100/50 dark:hover:bg-slate-800/50"
+                    }`}
+                aria-label="Switch to Portuguese"
+            >
+                pt-br
+            </button>
+            <button
+                onClick={() => switchLanguage("en")}
+                disabled={isPending}
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all duration-300 ${locale === "en"
+                        ? "bg-sky-700 text-white dark:bg-sky-400 dark:text-slate-900 shadow-md transform scale-105"
+                        : "text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-400 cursor-pointer hover:bg-sky-100/50 dark:hover:bg-slate-800/50"
+                    }`}
+                aria-label="Switch to English"
+            >
+                en-us
+            </button>
+        </div>
     );
 }
