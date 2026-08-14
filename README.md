@@ -1,41 +1,56 @@
-<<<<<<< HEAD
-# dev-portfolio
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bruno Lucas — Developer Portfolio
 
-## Getting Started
+Personal portfolio built with Next.js, showcasing my projects, experience, and education. Live at [brunolucasdev.com](https://brunolucasdev.com).
 
-First, run the development server:
+## Features
+
+- **Bilingual** — Portuguese and English, powered by `next-intl`
+- **Light/dark theme** — system-aware, with manual toggle
+- **Featured case study** — dedicated page for in-depth project write-ups, separate from the quick-glance project grid
+- **Responsive** — from mobile to desktop
+
+## Tech stack
+
+- [Next.js](https://nextjs.org) (App Router) + [React](https://react.dev) + [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [next-intl](https://next-intl.dev) for internationalization
+- [next-themes](https://github.com/pacocoursey/next-themes) for theming
+- [Lucide](https://lucide.dev) for icons
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the result. The app auto-reloads as you edit files under `src/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # run ESLint
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/[locale]/        # routes (locale-prefixed)
+  components/          # page sections (Hero, Projects, Experience, ...)
+  data/                 # structured content shared across components/pages
+  messages/             # en.json / pt.json translation strings
+  i18n/                 # next-intl request config
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployed on [Vercel](https://vercel.com), auto-deploying from the `main` branch.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> master
-teste
+- [GitHub](https://github.com/somentebruno)
+- [LinkedIn](https://www.linkedin.com/in/blsf/)
+- [Email](mailto:brunolucasdev@gmail.com)
