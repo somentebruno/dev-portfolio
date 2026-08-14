@@ -25,20 +25,20 @@ export function Projects() {
 
     const projects = [
         {
-            title: "TaskFlow Manager",
-            description: t("project1Desc"),
-            tags: ["React", "TypeScript", "Tailwind CSS", "State Management"],
-            image: "/taskflow.png",
-            link: "https://todo.brunolucasdev.com",
-            repo: "https://github.com/somentebruno/to-do-list-app",
-        },
-        {
             title: "Painel de Telessaúde MT",
             description: t("projectPainelTelessaudeDesc"),
             tags: ["HTML5", "CSS3", "JavaScript", "Acessibilidade"],
             image: "/painel-telessaude.png",
             link: "https://paineltelessaudemt.vercel.app",
             repo: "https://github.com/somentebruno/paineltelessaudemt",
+        },
+        {
+            title: "TaskFlow Manager",
+            description: t("project1Desc"),
+            tags: ["React", "TypeScript", "Tailwind CSS", "State Management"],
+            image: "/taskflow.png",
+            link: "https://todo.brunolucasdev.com",
+            repo: "https://github.com/somentebruno/to-do-list-app",
         },
         {
             title: "DevLinks",
