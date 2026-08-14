@@ -1,55 +1,99 @@
+<div align="center">
+
 # Bruno Lucas — Developer Portfolio
 
-Personal portfolio built with Next.js, showcasing my projects, experience, and education. Live at [brunolucasdev.com](https://brunolucasdev.com).
+### Portfólio pessoal de desenvolvedor Full Stack
 
-## Features
+Seções de sobre, formação, experiência e projetos numa única página — bilíngue, com tema claro/escuro e um estudo de caso dedicado para o projeto mais relevante.
 
-- **Bilingual** — Portuguese and English, powered by `next-intl`
-- **Light/dark theme** — system-aware, with manual toggle
-- **Featured case study** — dedicated page for in-depth project write-ups, separate from the quick-glance project grid
-- **Responsive** — from mobile to desktop
+![Next.js](https://img.shields.io/badge/Next.js-16.1-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2-149ECA?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)
 
-## Tech stack
+![i18n](https://img.shields.io/badge/i18n-PT%20%2F%20EN-0EA5E9?style=flat-square)
+![Tema](https://img.shields.io/badge/tema-claro%20%2F%20escuro-0EA5E9?style=flat-square)
+![Deploy](https://img.shields.io/badge/deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-- [Next.js](https://nextjs.org) (App Router) + [React](https://react.dev) + [TypeScript](https://www.typescriptlang.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [next-intl](https://next-intl.dev) for internationalization
-- [next-themes](https://github.com/pacocoursey/next-themes) for theming
-- [Lucide](https://lucide.dev) for icons
+</div>
 
-## Getting started
+---
+
+## 🎯 Objetivo
+
+Site pessoal para se apresentar a recrutadores e colegas de forma rápida de escanear. Resolve três coisas:
+
+- **Contexto rápido** — Hero, formação e experiência num scroll só, sem cliques extras.
+- **Prova de trabalho** — grade de projetos com link de demo e código, mais um card em destaque para o projeto mais relevante.
+- **Projeto privado sem repositório público** — o Tele Educa MT (meu maior projeto) tem credenciais e não pode ser aberto. Em vez de um link morto, ele ganha uma página própria de case study com o desafio, o que foi construído e o resultado.
+
+## 🧭 Como o site se organiza
+
+```
+Visitante
+   │
+   ▼
+/[locale]                              en | pt, detectado por middleware
+   │
+   ├─ Hero → Educação → Experiência → Projetos → Tecnologias → Contato
+   │         (uma página só, navegação por âncora)
+   │
+   └─ /projects/tele-educa             página dedicada do case study
+```
+
+Todo o texto visível passa por tradução — nada é hardcoded em um idioma só:
+
+| Fonte | Contém | Usado por |
+|---|---|---|
+| `src/messages/{en,pt}.json` | Rótulos, descrições, botões, textos das seções | Todos os componentes, via `next-intl` |
+| `src/data/tele-educa.ts` | Tags, galeria de prints e link de demo do case study | Card em destaque + página `/projects/tele-educa` |
+| `public/*.png` | Screenshots dos projetos | Cards da seção Projetos |
+
+O tema segue o sistema operacional por padrão e pode ser trocado manualmente pelo botão na navbar (`next-themes`, persistido entre visitas).
+
+## 🛠️ Tecnologias e ferramentas
+
+**Núcleo**
+
+| Ferramenta | Versão | Papel no projeto |
+|---|---|---|
+| Next.js | 16.1 (App Router) | Roteamento, layouts por locale, otimização de imagens |
+| React | 19.2 | Interface |
+| TypeScript | 5 | Tipagem em todo o código |
+| Tailwind CSS | 4 | Estilo utilitário |
+
+**Conteúdo e i18n**
+
+| Ferramenta | Para quê |
+|---|---|
+| next-intl | Traduções PT/EN e roteamento por locale |
+| next-themes | Tema claro/escuro |
+| Lucide | Ícones da interface |
+| Devicon | Ícones das tecnologias na seção "Tecnologias" |
+
+**Operação**
+
+| Ferramenta | Para quê |
+|---|---|
+| ESLint | Lint do código |
+| Vercel | Deploy automático a partir do `main` |
+
+## 🚀 Como rodar localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the result. The app auto-reloads as you edit files under `src/`.
-
-Other scripts:
+Abra [http://localhost:3000](http://localhost:3000). O app recarrega automaticamente ao editar arquivos em `src/`.
 
 ```bash
-npm run build   # production build
-npm run start   # serve the production build
-npm run lint    # run ESLint
+npm run build   # build de produção
+npm run start   # serve o build de produção
+npm run lint    # roda o ESLint
 ```
 
-## Project structure
-
-```
-src/
-  app/[locale]/        # routes (locale-prefixed)
-  components/          # page sections (Hero, Projects, Experience, ...)
-  data/                 # structured content shared across components/pages
-  messages/             # en.json / pt.json translation strings
-  i18n/                 # next-intl request config
-```
-
-## Deployment
-
-Deployed on [Vercel](https://vercel.com), auto-deploying from the `main` branch.
-
-## Contact
+## 📬 Contato
 
 - [GitHub](https://github.com/somentebruno)
 - [LinkedIn](https://www.linkedin.com/in/blsf/)
