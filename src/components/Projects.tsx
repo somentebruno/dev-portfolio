@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Globe, Code, ChevronDown, ChevronUp } from "lucide-react";
+import { Search, Globe, Code, ChevronDown, ChevronUp, Lock } from "lucide-react";
 import { useState } from "react";
 
 import { useTranslations } from "next-intl";
@@ -13,6 +13,14 @@ export function Projects() {
     const [showAll, setShowAll] = useState(false);
 
     const projects = [
+        {
+            title: "Tele Educa MT",
+            description: t("projectTeleEducaDesc"),
+            tags: ["Next.js", "TypeScript", "PostgreSQL", "Multi-tenant", "Jitsi/WebRTC"],
+            image: "/tele-educa.png",
+            link: "",
+            repo: "",
+        },
         {
             title: "TaskFlow Manager",
             description: t("project1Desc"),
@@ -116,6 +124,12 @@ export function Projects() {
                                         <Code className="w-4 h-4" />
                                         CODE
                                     </Link>
+                                )}
+                                {!project.link && !project.repo && (
+                                    <span className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/30 text-white/80 font-bold text-xs tracking-wider">
+                                        <Lock className="w-4 h-4" />
+                                        {t("restrictedAccess")}
+                                    </span>
                                 )}
                             </div>
                         </div>
