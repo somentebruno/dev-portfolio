@@ -81,7 +81,11 @@
         "buildBody": "Desenvolvi sozinho, do planejamento ao deploy, uma plataforma multi-tenant — cada secretaria ou instituição com seu próprio espaço e fluxo de acesso aberto ou por convite/aprovação. A base é Next.js 16 (App Router) + React 19 + TypeScript, com banco Postgres self-hosted numa VPS própria, usando RLS para isolamento fino de acesso entre secretarias. O diferencial ficou na parte síncrona: integrei o Jitsi Meet self-hosted diretamente no fluxo do curso, com autenticação via JWT para moderação real — só o palestrante/instrutor entra como moderador — e gravação disponível automaticamente no acervo do curso após a aula. Construí também o controle de presença atrelado às aulas ao vivo, com geração automática de declarações, peça central para o profissional de saúde comprovar carga horária. Completa a plataforma uma trilha assíncrona completa (módulos, questionários com correção automática, mural de avisos, relatório de notas), um modo de edição de curso no estilo Moodle — o staff edita na própria página que o aluno vê — e uma trilha de auditoria de quem criou, editou ou excluiu cada registro.",
         "resultTitle": "Resultado",
         "resultBody": "O resultado é uma plataforma em produção que resolve, num só lugar, o gargalo de capacitação continuada dos profissionais de saúde do estado: aula ao vivo com moderação e gravação confiáveis, presença rastreada automaticamente, conteúdo assíncrono organizado e emissão de declaração sem processo manual — eliminando a fragmentação entre ferramenta de vídeo, LMS e controle de frequência que existia antes.",
-        "galleryTitle": "Prints da plataforma"
+        "galleryTitle": "Prints da plataforma",
+        "galleryCaption1": "Painel do treinamento ao vivo — presença, palestrante e emissão automática de declaração.",
+        "galleryCaption2": "Acervo — gravações e conteúdos passados disponíveis para estudo livre.",
+        "galleryCaption3": "Central de declarações — certificados de carga horária emitidos automaticamente.",
+        "galleryCaption4": "Trilha de auditoria — registro imutável de quem criou, editou ou excluiu cada dado."
     },
     "Footer": {
         "connect": "Vamos conectar",

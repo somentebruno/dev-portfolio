@@ -81,7 +81,11 @@
         "buildBody": "I built it solo, from planning to deployment: a multi-tenant platform where each department or institution gets its own space, with either open or invite/approval-based access. The foundation is Next.js 16 (App Router) + React 19 + TypeScript, backed by a self-hosted Postgres on my own VPS, using RLS for fine-grained access isolation between departments. The standout piece is the live side: I integrated self-hosted Jitsi Meet directly into the course flow, with JWT authentication for real moderation — only the instructor joins as moderator — and recordings automatically land in the course's library afterward. I also built attendance tracking tied to live classes, with automatic certificate generation, a core requirement for healthcare professionals proving training hours. Rounding out the platform: a full async track (modules, auto-graded quizzes, announcements, grade reports), Moodle-style in-page course editing — staff edit right on the page students see — and a full audit trail of who created, edited, or deleted each record.",
         "resultTitle": "Result",
         "resultBody": "The result is a production platform that solves, in one place, the state's continuing-education bottleneck for healthcare professionals: live classes with reliable moderation and recording, automatically tracked attendance, organized async content, and certificate issuance without any manual process — eliminating the fragmentation between video tool, LMS, and attendance control that existed before.",
-        "galleryTitle": "Platform screenshots"
+        "galleryTitle": "Platform screenshots",
+        "galleryCaption1": "Live training panel — attendance, speaker info, and automatic certificate issuance.",
+        "galleryCaption2": "Library — past recordings and content available for self-paced study.",
+        "galleryCaption3": "Certificates hub — training-hour certificates issued automatically.",
+        "galleryCaption4": "Audit trail — immutable record of who created, edited, or deleted each record."
     },
     "Footer": {
         "connect": "Let's connect",

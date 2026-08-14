@@ -103,19 +103,21 @@ export default async function TeleEducaPage({
                         {t("galleryTitle")}
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        {teleEduca.gallery.slice(1).map((src) => (
-                            <div
-                                key={src}
-                                className="relative aspect-video rounded-lg overflow-hidden border border-border-light dark:border-border-dark"
-                            >
-                                <Image
-                                    src={src}
-                                    alt="Tele Educa MT screenshot"
-                                    fill
-                                    sizes="(min-width: 640px) 384px, 100vw"
-                                    className="object-cover"
-                                />
-                            </div>
+                        {teleEduca.gallery.slice(1).map((src, index) => (
+                            <figure key={src} className="space-y-2">
+                                <div className="relative aspect-video rounded-lg overflow-hidden border border-border-light dark:border-border-dark">
+                                    <Image
+                                        src={src}
+                                        alt={t(`galleryCaption${index + 1}`)}
+                                        fill
+                                        sizes="(min-width: 640px) 384px, 100vw"
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <figcaption className="text-xs text-text-muted-light dark:text-text-muted-dark">
+                                    {t(`galleryCaption${index + 1}`)}
+                                </figcaption>
+                            </figure>
                         ))}
                     </div>
                 </section>
