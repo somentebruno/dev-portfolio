@@ -61,6 +61,7 @@
         "viewDemo": "Acessar plataforma",
         "projectTeleEducaShortDesc": "Plataforma multi-tenant de educação continuada para a Secretaria de Estado de Saúde de Mato Grosso, unindo aula ao vivo, trilha assíncrona e comprovação de presença num só produto — planejada e construída sozinho, do zero ao deploy.",
         "projectPainelTelessaudeDesc": "Portal oficial de Telessaúde da Secretaria de Saúde de Mato Grosso. Reúne acesso do profissional, do paciente, especialidades e indicadores num só lugar, com foco em acessibilidade.",
+        "projectUysiDesc": "Site institucional da UYSI Digital, minha marca própria de transformação digital e governança pública. Blog dinâmico via Supabase, mapa de cobertura por estado e formulário de contato integrado.",
         "project1Desc": "Gerenciador de tarefas focado em performance. Implementa CRUD completo, persistência local (LocalStorage) e gestão de estado otimizada para uma experiência instantânea.",
         "project2Desc": "Agregador de links personalizado com interface responsiva e sistema de troca de temas (Light/Dark mode) em tempo real. Focado em semântica HTML, performance e experiência do usuário através de micro-interações.",
         "project3Desc": "Este projeto é uma landing page institucional para uma empresa de móveis sob medida, focada em uma experiência de usuário limpa e elegante. Foi desenvolvido durante minha trilha de aprendizado com a Rocketseat, aplicando conceitos fundamentais de estruturação web e fidelidade ao design original.",

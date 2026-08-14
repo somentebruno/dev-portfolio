@@ -33,6 +33,14 @@ export function Projects() {
             repo: "https://github.com/somentebruno/paineltelessaudemt",
         },
         {
+            title: "UYSI Digital",
+            description: t("projectUysiDesc"),
+            tags: ["Next.js", "React", "Supabase", "Tailwind CSS"],
+            image: "/uysi.jpg",
+            link: "https://uysi.vercel.app",
+            repo: "https://github.com/somentebruno/uysi",
+        },
+        {
             title: "TaskFlow Manager",
             description: t("project1Desc"),
             tags: ["React", "TypeScript", "Tailwind CSS", "State Management"],
