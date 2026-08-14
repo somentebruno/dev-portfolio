@@ -72,7 +72,9 @@ export function Navbar() {
                         </button>
                         <LanguageSwitcher />
                         <Link
-                            href="#"
+                            href="/curriculo-bruno-lucas.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-sky-600 dark:bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-sky-700 dark:hover:bg-sky-600 transition-colors shadow-lg"
                         >
                             {t("resume")}
