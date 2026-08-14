@@ -2,23 +2,25 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Globe, Code, ChevronDown, ChevronUp, Lock, X, ArrowRight } from "lucide-react";
+import { Search, Globe, Code, ChevronDown, ChevronUp, Lock, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { teleEduca } from "@/data/tele-educa";
 
 export function Projects() {
     const t = useTranslations("Projects");
+    const locale = useLocale();
     const [search, setSearch] = useState("");
     const [showAll, setShowAll] = useState(false);
-    const [showFeaturedModal, setShowFeaturedModal] = useState(false);
 
     const featuredProject = {
         title: "Tele Educa MT",
         shortDescription: t("projectTeleEducaShortDesc"),
-        fullDescription: t("projectTeleEducaDesc"),
-        tags: ["Next.js", "TypeScript", "PostgreSQL", "Multi-tenant", "Jitsi/WebRTC"],
-        gallery: ["/tele-educa.png"],
+        tags: teleEduca.tags,
+        image: teleEduca.gallery[0],
+        href: `/${locale}/projects/${teleEduca.slug}`,
+        demoUrl: teleEduca.demoUrl,
     };
 
     const projects = [
@@ -92,7 +94,7 @@ export function Projects() {
             <div className="group relative grid md:grid-cols-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 mb-8">
                 <div className="relative h-56 md:h-full overflow-hidden bg-gray-200 dark:bg-gray-800">
                     <Image
-                        src={featuredProject.gallery[0]}
+                        src={featuredProject.image}
                         alt={`${featuredProject.title} Interface`}
                         width={800}
                         height={450}
@@ -123,13 +125,24 @@ export function Projects() {
                             </span>
                         ))}
                     </div>
-                    <button
-                        onClick={() => setShowFeaturedModal(true)}
-                        className="group/btn inline-flex items-center gap-2 self-start mt-2 px-5 py-2.5 rounded-full bg-primary text-white font-bold text-xs tracking-wider hover:bg-primary/90 transition-colors cursor-pointer"
-                    >
-                        {t("learnMore")}
-                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
+                    <div className="flex flex-wrap gap-3 mt-2">
+                        <Link
+                            href={featuredProject.href}
+                            className="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white font-bold text-xs tracking-wider hover:bg-primary/90 transition-colors"
+                        >
+                            {t("learnMore")}
+                            <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                        </Link>
+                        <Link
+                            href={featuredProject.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors font-bold text-xs tracking-wider"
+                        >
+                            <Globe className="w-4 h-4" />
+                            {t("viewDemo")}
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -216,58 +229,6 @@ export function Projects() {
                             </>
                         )}
                     </button>
-                </div>
-            )}
-            {showFeaturedModal && (
-                <div
-                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70"
-                    onClick={() => setShowFeaturedModal(false)}
-                >
-                    <div
-                        className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-6 md:p-8"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button
-                            onClick={() => setShowFeaturedModal(false)}
-                            aria-label={t("close")}
-                            className="absolute top-4 right-4 text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors cursor-pointer"
-                        >
-                            <X className="w-5 h-5" />
-                        </button>
-                        <span className="flex items-center gap-2 w-fit px-3 py-1.5 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark font-bold text-[10px] tracking-wider uppercase mb-4">
-                            <Lock className="w-3 h-3" />
-                            {t("restrictedAccess")}
-                        </span>
-                        <h3 className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-4 pr-8">
-                            {featuredProject.title}
-                        </h3>
-                        <p className="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed text-justify mb-6">
-                            {featuredProject.fullDescription}
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-6">
-                            {featuredProject.tags.map((tag) => (
-                                <span
-                                    key={tag}
-                                    className="px-2 py-1 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded text-[10px] font-mono text-text-muted-light dark:text-text-muted-dark uppercase"
-                                >
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            {featuredProject.gallery.map((src) => (
-                                <div key={src} className="relative h-40 rounded-lg overflow-hidden border border-border-light dark:border-border-dark">
-                                    <Image
-                                        src={src}
-                                        alt={`${featuredProject.title} screenshot`}
-                                        width={400}
-                                        height={220}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
             )}
         </section>
