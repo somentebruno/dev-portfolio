@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Code } from "lucide-react";
 
@@ -44,12 +43,11 @@ export function Hero() {
             <div className="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2 relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl transform translate-x-10 translate-y-10 -z-10"></div>
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 hover:shadow-[0_0_10px_rgba(14,165,233,0.4)]">
-                    <Image
-                        src="/profile-smile.png"
+                    <img
+                        src="/avatar.svg"
                         alt="Bruno Lucas"
                         width={320}
                         height={320}
-                        priority
                         className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
                     />
                 </div>
