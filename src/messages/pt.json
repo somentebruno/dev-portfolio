@@ -58,7 +58,7 @@
         "restrictedAccess": "Acesso restrito",
         "featuredLabel": "Projeto em destaque",
         "learnMore": "Saber mais",
-        "viewDemo": "Ver demo",
+        "viewDemo": "Acessar plataforma",
         "projectTeleEducaShortDesc": "Plataforma multi-tenant de educação continuada para a Secretaria de Estado de Saúde de Mato Grosso, unindo aula ao vivo, trilha assíncrona e comprovação de presença num só produto — planejada e construída sozinho, do zero ao deploy.",
         "project1Desc": "Gerenciador de tarefas focado em performance. Implementa CRUD completo, persistência local (LocalStorage) e gestão de estado otimizada para uma experiência instantânea.",
         "project2Desc": "Agregador de links personalizado com interface responsiva e sistema de troca de temas (Light/Dark mode) em tempo real. Focado em semântica HTML, performance e experiência do usuário através de micro-interações.",
@@ -74,7 +74,7 @@
     "TeleEducaPage": {
         "backToPortfolio": "Voltar ao portfólio",
         "eyebrow": "Estudo de caso",
-        "viewLiveDemo": "Ver demo ao vivo",
+        "viewLiveDemo": "Acessar plataforma",
         "challengeTitle": "O desafio",
         "challengeBody": "A Secretaria de Estado de Saúde de Mato Grosso precisava de uma plataforma própria de educação continuada para capacitar profissionais de saúde — médicos, enfermeiros, técnicos — espalhados pelo estado, unindo cursos assíncronos e aulas ao vivo num só lugar. Antes, essa capacitação dependia de ferramentas de terceiros desconectadas entre si: uma para vídeo, outra para conteúdo, outra para controle de presença.",
         "buildTitle": "O que eu construí",
