@@ -60,6 +60,7 @@
         "learnMore": "Learn more",
         "viewDemo": "Visit platform",
         "projectTeleEducaShortDesc": "Multi-tenant continuing-education platform for Mato Grosso's State Health Department, unifying live classes, async coursework, and attendance proof in one product — planned and built solo, from the ground up to deployment.",
+        "projectPainelTelessaudeDesc": "Official Telehealth access portal for Mato Grosso's State Health Department, bringing professional access, patient access, offered specialties, and program indicators together in one place. Built with vanilla HTML, CSS, and JavaScript, focused on institutional visual identity, SEO, and accessibility (font-size and contrast controls).",
         "project1Desc": "Performance-focused task manager. Implements full CRUD, local persistence (LocalStorage), and optimized state management for an instant experience.",
         "project2Desc": "Custom link aggregator with responsive interface and real-time theme switching system (Light/Dark mode). Focused on HTML semantics, performance, and user experience through micro-interactions.",
         "project3Desc": "This project is an institutional landing page for a custom furniture company, focused on a clean and elegant user experience. It was developed during my learning path with Rocketseat, applying fundamental concepts of web structuring and fidelity to original design.",

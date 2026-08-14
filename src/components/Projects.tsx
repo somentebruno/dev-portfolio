@@ -33,6 +33,14 @@ export function Projects() {
             repo: "https://github.com/somentebruno/to-do-list-app",
         },
         {
+            title: "Painel de Telessaúde MT",
+            description: t("projectPainelTelessaudeDesc"),
+            tags: ["HTML5", "CSS3", "JavaScript", "Acessibilidade"],
+            image: "/painel-telessaude.png",
+            link: "https://paineltelessaudemt.vercel.app",
+            repo: "https://github.com/somentebruno/paineltelessaudemt",
+        },
+        {
             title: "DevLinks",
             description: t("project2Desc"),
             tags: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
