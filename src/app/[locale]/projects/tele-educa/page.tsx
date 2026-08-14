@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Globe, Lock } from "lucide-react";
 
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { Footer } from "@/components/Footer";
+import { LightboxImage } from "@/components/LightboxImage";
 import { teleEduca } from "@/data/tele-educa";
 
 export default async function TeleEducaPage({
@@ -60,10 +60,9 @@ export default async function TeleEducaPage({
             </header>
 
             <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-border-light dark:border-border-dark shadow-xl">
-                <Image
+                <LightboxImage
                     src={teleEduca.gallery[0]}
                     alt="Tele Educa MT Interface"
-                    fill
                     sizes="(min-width: 768px) 768px, 100vw"
                     className="object-cover"
                     priority
@@ -106,10 +105,10 @@ export default async function TeleEducaPage({
                         {teleEduca.gallery.slice(1).map((src, index) => (
                             <figure key={src} className="space-y-2">
                                 <div className="relative aspect-video rounded-lg overflow-hidden border border-border-light dark:border-border-dark">
-                                    <Image
+                                    <LightboxImage
                                         src={src}
                                         alt={t(`galleryCaption${index + 1}`)}
-                                        fill
+                                        caption={t(`galleryCaption${index + 1}`)}
                                         sizes="(min-width: 640px) 384px, 100vw"
                                         className="object-cover"
                                     />
