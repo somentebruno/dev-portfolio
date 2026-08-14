@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Globe, Code, ChevronDown, ChevronUp, Lock } from "lucide-react";
+import { Search, Globe, Code, ChevronDown, ChevronUp, Lock, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 import { useTranslations } from "next-intl";
@@ -11,16 +11,17 @@ export function Projects() {
     const t = useTranslations("Projects");
     const [search, setSearch] = useState("");
     const [showAll, setShowAll] = useState(false);
+    const [showFeaturedModal, setShowFeaturedModal] = useState(false);
+
+    const featuredProject = {
+        title: "Tele Educa MT",
+        shortDescription: t("projectTeleEducaShortDesc"),
+        fullDescription: t("projectTeleEducaDesc"),
+        tags: ["Next.js", "TypeScript", "PostgreSQL", "Multi-tenant", "Jitsi/WebRTC"],
+        gallery: ["/tele-educa.png"],
+    };
 
     const projects = [
-        {
-            title: "Tele Educa MT",
-            description: t("projectTeleEducaDesc"),
-            tags: ["Next.js", "TypeScript", "PostgreSQL", "Multi-tenant", "Jitsi/WebRTC"],
-            image: "/tele-educa.png",
-            link: "",
-            repo: "",
-        },
         {
             title: "TaskFlow Manager",
             description: t("project1Desc"),
@@ -86,6 +87,49 @@ export function Projects() {
                         />
                         <Search className="absolute left-3 top-1.5 text-text-muted-light dark:text-text-muted-dark w-4 h-4 mt-0.5" />
                     </div>
+                </div>
+            </div>
+            <div className="group relative grid md:grid-cols-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 mb-8">
+                <div className="relative h-56 md:h-full overflow-hidden bg-gray-200 dark:bg-gray-800">
+                    <Image
+                        src={featuredProject.gallery[0]}
+                        alt={`${featuredProject.title} Interface`}
+                        width={800}
+                        height={450}
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <span className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 text-white/90 font-bold text-[10px] tracking-wider uppercase">
+                        <Lock className="w-3 h-3" />
+                        {t("restrictedAccess")}
+                    </span>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col justify-center gap-4">
+                    <span className="font-mono text-primary text-xs uppercase tracking-widest">
+                        {t("featuredLabel")}
+                    </span>
+                    <h4 className="text-2xl font-bold text-text-main-light dark:text-text-main-dark">
+                        {featuredProject.title}
+                    </h4>
+                    <p className="text-sm text-text-muted-light dark:text-text-muted-dark text-justify">
+                        {featuredProject.shortDescription}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                        {featuredProject.tags.map((tag) => (
+                            <span
+                                key={tag}
+                                className="px-2 py-1 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded text-[10px] font-mono text-text-muted-light dark:text-text-muted-dark uppercase"
+                            >
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                    <button
+                        onClick={() => setShowFeaturedModal(true)}
+                        className="group/btn inline-flex items-center gap-2 self-start mt-2 px-5 py-2.5 rounded-full bg-primary text-white font-bold text-xs tracking-wider hover:bg-primary/90 transition-colors cursor-pointer"
+                    >
+                        {t("learnMore")}
+                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </button>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -172,6 +216,58 @@ export function Projects() {
                             </>
                         )}
                     </button>
+                </div>
+            )}
+            {showFeaturedModal && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70"
+                    onClick={() => setShowFeaturedModal(false)}
+                >
+                    <div
+                        className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-6 md:p-8"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            onClick={() => setShowFeaturedModal(false)}
+                            aria-label={t("close")}
+                            className="absolute top-4 right-4 text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors cursor-pointer"
+                        >
+                            <X className="w-5 h-5" />
+                        </button>
+                        <span className="flex items-center gap-2 w-fit px-3 py-1.5 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark font-bold text-[10px] tracking-wider uppercase mb-4">
+                            <Lock className="w-3 h-3" />
+                            {t("restrictedAccess")}
+                        </span>
+                        <h3 className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-4 pr-8">
+                            {featuredProject.title}
+                        </h3>
+                        <p className="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed text-justify mb-6">
+                            {featuredProject.fullDescription}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                            {featuredProject.tags.map((tag) => (
+                                <span
+                                    key={tag}
+                                    className="px-2 py-1 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded text-[10px] font-mono text-text-muted-light dark:text-text-muted-dark uppercase"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            {featuredProject.gallery.map((src) => (
+                                <div key={src} className="relative h-40 rounded-lg overflow-hidden border border-border-light dark:border-border-dark">
+                                    <Image
+                                        src={src}
+                                        alt={`${featuredProject.title} screenshot`}
+                                        width={400}
+                                        height={220}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             )}
         </section>
