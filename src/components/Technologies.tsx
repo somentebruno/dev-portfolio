@@ -18,6 +18,10 @@ const technologies = [
         iconClass: "devicon-nodejs-plain",
     },
     {
+        name: "PostgreSQL",
+        iconClass: "devicon-postgresql-plain",
+    },
+    {
         name: "Git / GitHub",
         iconClass: "devicon-github-original",
     },
