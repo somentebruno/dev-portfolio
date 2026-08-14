@@ -25,7 +25,7 @@
     },
     "Hero": {
         "greeting": "Hello, I am",
-        "role": "Software Engineer & Creative.",
+        "role": "Software Engineer & IT Governance.",
         "description": "I'm a Full Stack Developer specialized in crafting exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.",
         "viewProjects": "View Projects",
         "contactMe": "Contact Me",
@@ -35,10 +35,11 @@
         "featured": "Featured Experience",
         "present": "PRESENT",
         "seniorRole": "Postgraduate Intern (Technology & Innovation)",
-        "seniorDesc": "Working at the intersection of technology and communication for the state Digital Health program. Responsible for translating complex technical concepts into accessible formats for the general public and supporting the diffusion strategy of the program's digital tools.",
+        "seniorDesc": "Working at the intersection of technology, communication, and governance for the state Digital Health program. Responsible for translating complex technical concepts into accessible formats for the general public and supporting the diffusion and governance strategy of the program's digital tools.",
         "tag1": "Digital Health",
         "tag2": "Strategy",
         "tag3": "Technical Communication",
+        "tag4": "IT Governance",
         "previousRoles": "Previous roles",
         "role1": "Information Systems Programmer",
         "desc1": "Acting in the support and maintenance of legacy systems. Responsible for technical incident analysis, troubleshooting, and validation of fixes with the development team. Ensuring application stability and level 2 support for critical users.",
@@ -50,7 +51,8 @@
         "tagRole2_1": "Requirements Analysis",
         "tagRole2_2": "Project Management",
         "tagRole2_3": "Business Logic",
-        "tagRole2_4": "Compliance"
+        "tagRole2_4": "Compliance",
+        "tagRole2_5": "IT Governance"
     },
     "Projects": {
         "recentProjects": "Recent Projects",

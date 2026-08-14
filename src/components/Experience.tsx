@@ -45,6 +45,9 @@ export function Experience() {
                         <span className="px-2 py-1 text-[10px] rounded bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark font-medium">
                             {t("tag3")}
                         </span>
+                        <span className="px-2 py-1 text-[10px] rounded bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark font-medium">
+                            {t("tag4")}
+                        </span>
                     </div>
                 </div>
 
@@ -109,6 +112,9 @@ export function Experience() {
                             </span>
                             <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
                                 {t("tagRole2_4")}
+                            </span>
+                            <span className="px-2 py-1 text-[10px] rounded bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark">
+                                {t("tagRole2_5")}
                             </span>
                         </div>
                     </div>
