@@ -1,5 +1,6 @@
+import Link from "next/link";
 import Image from "next/image"; // Added for Album Cover
-import { RefreshCw, Disc } from "lucide-react"; // Using Lucide icons to replace Material Icons
+import { Github, Linkedin, Mail, RefreshCw, Disc } from "lucide-react"; // Using Lucide icons to replace Material Icons
 
 import { useTranslations } from "next-intl";
 
@@ -8,7 +9,35 @@ export function Footer() {
 
   return (
     <footer className="pt-12 border-t border-border-light dark:border-border-dark">
-      <div className="flex justify-center pb-12">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 pb-12">
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-text-main-light dark:text-text-main-dark">
+            {t("connect")}
+          </h3>
+          <div className="flex gap-4">
+            <Link
+              href="https://github.com/somentebruno"
+              className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
+            >
+              <Github className="w-5 h-5" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/blsf/"
+              className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="mailto:brunolucasdev@gmail.com"
+              className="p-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-muted-light dark:text-text-muted-dark hover:text-primary hover:border-primary transition-all"
+            >
+              <Mail className="w-5 h-5" />
+              <span className="sr-only">Email</span>
+            </Link>
+          </div>
+        </div>
         <div className="w-full md:w-auto bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-4 flex items-center gap-4 max-w-sm">
           <div className="relative w-12 h-12 rounded bg-gray-700 flex-shrink-0 overflow-hidden">
             <Image

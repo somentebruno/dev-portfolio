@@ -92,7 +92,7 @@
         "galleryCaption4": "Trilha de auditoria — registro imutável de quem criou, editou ou excluiu cada dado."
     },
     "Contact": {
-        "eyebrow": "Contato",
+        "title": "Contato",
         "titleNormal": "Vamos",
         "titleHighlight": "conversar",
         "description": "Estou sempre aberto a novas oportunidades e conversas sobre tecnologia. Sinta-se à vontade para entrar em contato!",
@@ -103,6 +103,7 @@
         "sendMessage": "Enviar Mensagem"
     },
     "Footer": {
+        "connect": "Vamos conectar",
         "designedBy": "© 2026 Bruno Lucas. Desenvolvido com Tailwind CSS."
     }
 }
