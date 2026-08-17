@@ -5,6 +5,7 @@ import { Experience } from "@/components/Experience";
 import { Education } from "@/components/Education";
 import { Projects } from "@/components/Projects";
 import { Technologies } from "@/components/Technologies";
+import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 import { setRequestLocale } from "next-intl/server";
@@ -25,6 +26,7 @@ export default async function Home({
         <Experience />
         <Projects />
         <Technologies />
+        <Contact />
         <Footer />
       </main>
     </>

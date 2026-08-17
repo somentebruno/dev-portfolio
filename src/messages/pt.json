@@ -91,9 +91,18 @@
         "galleryCaption3": "Central de declarações — certificados de carga horária emitidos automaticamente.",
         "galleryCaption4": "Trilha de auditoria — registro imutável de quem criou, editou ou excluiu cada dado."
     },
+    "Contact": {
+        "eyebrow": "Contato",
+        "titleNormal": "Vamos",
+        "titleHighlight": "conversar",
+        "description": "Estou sempre aberto a novas oportunidades e conversas sobre tecnologia. Sinta-se à vontade para entrar em contato!",
+        "emailLabel": "Email",
+        "githubLabel": "GitHub",
+        "linkedinLabel": "LinkedIn",
+        "whatsappLabel": "WhatsApp",
+        "sendMessage": "Enviar Mensagem"
+    },
     "Footer": {
-        "connect": "Vamos conectar",
-        "lastPlayed": "Última Reprodução",
         "designedBy": "© 2026 Bruno Lucas. Desenvolvido com Tailwind CSS."
     }
 }

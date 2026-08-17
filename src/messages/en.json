@@ -91,9 +91,18 @@
         "galleryCaption3": "Certificates hub — training-hour certificates issued automatically.",
         "galleryCaption4": "Audit trail — immutable record of who created, edited, or deleted each record."
     },
+    "Contact": {
+        "eyebrow": "Contact",
+        "titleNormal": "Let's",
+        "titleHighlight": "talk",
+        "description": "I'm always open to new opportunities and conversations about technology. Feel free to reach out!",
+        "emailLabel": "Email",
+        "githubLabel": "GitHub",
+        "linkedinLabel": "LinkedIn",
+        "whatsappLabel": "WhatsApp",
+        "sendMessage": "Send Message"
+    },
     "Footer": {
-        "connect": "Let's connect",
-        "lastPlayed": "Last Played",
         "designedBy": "© 2026 Bruno Lucas. Designed with Tailwind CSS."
     }
 }
